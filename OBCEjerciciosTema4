@@ -1,0 +1,56 @@
+ public static void main(String[] args) {
+        
+       int numeroIf = 5;
+       String resultado = "";
+
+       if (numeroIf < 0) {
+           resultado = "Número negativo";
+       } else if (numeroIf == 0){
+           resultado = "El número es 0";
+       } else {
+           resultado = "Número positivo";
+       }
+       
+       int numeroWhile = 1;
+       
+       while (numeroWhile<3){
+        
+       System.out.println("Valor de numeroWhile: " + numeroWhile);
+       
+       numeroWhile++;
+    }
+       
+    int numeroDoWhile = 1;
+       
+    do {
+        
+       
+            numeroDoWhile++; 
+        
+    } while (numeroDoWhile<3);
+    
+    System.out.println("Valor de numeroDoWhile: " + numeroDoWhile);       
+    
+    
+    for (int numeroFor = 0; numeroFor <=3; numeroFor++){
+    System.out.println("Valor de numeroFor: " + numeroFor);
+    }
+    
+    int estacion = 2;
+    String nombreEstacion;
+    
+    switch (estacion) 
+        {
+            case 1:  nombreEstacion = "Invierno";
+                     break;
+            case 2:  nombreEstacion = "Primavera";
+                     break;
+            case 3:  nombreEstacion = "Verano";
+                     break;
+            case 4:  nombreEstacion = "Otoño";
+                     break;
+            default: nombreEstacion = "Estación incorrecta";
+                     break;
+        }
+        System.out.println(nombreEstacion);
+    }
