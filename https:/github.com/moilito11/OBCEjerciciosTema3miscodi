@@ -1,0 +1,51 @@
+
+package obc.ejercicios.tema.pkg3;
+
+/**
+ *
+ * @author MoiC
+ */
+public class OBCEjerciciosTema3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+    sumaNumeros(10,20,30);
+    
+    coche miCoche = new coche();
+    
+    miCoche.incrementoPuertas(1);
+    
+    System.out.println("El vehículo tiene " + miCoche.nPuertas + " puertas.");
+        
+    }
+    
+    public static int sumaNumeros (int a, int b, int c){
+
+        return a+b+c;
+    }
+    
+}
+
+
+package obc.ejercicios.tema.pkg3;
+
+/**
+ *
+ * @author MoiC
+ */
+public class coche {
+    
+    
+   int nPuertas = 0; 
+   
+   
+   public void incrementoPuertas (int incremento){
+       
+       this.nPuertas=incremento;
+      
+   }
+}
